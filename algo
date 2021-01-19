@@ -1,0 +1,24 @@
+ALGORITHM checkpointalgo1
+
+VAR
+    ch:CHAR
+    nbvoy,nbwords,nbrchar:INTEGER:=0
+
+BEGIN
+    while(ch<>".")  
+     READ(ch);
+        IF (ch in ["a","e","o","y","i","u"]) THEN
+        nbvoy:=nbvoy+1;
+        END_IF
+        IF (ch = '')
+        nbwords=nbwords+1;
+        END_IF
+        nbrchar=nbrchar+1;
+    END_IF
+    END_WHILE 
+        Write("The length of the sentence is ",nbchar);
+    Write("The number of words in the sentence is ",nbwords);
+    Write("the number of vowels in the sentence. is ",nbvoy);
+     
+
+END
